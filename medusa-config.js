@@ -30,7 +30,7 @@ const STORE_CORS = process.env.STORE_CORS || "https://thecollegeroad.com";
 
 // const DATABASE_URL = process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
 
-const DATABASE_URL = process.env.DATABASE_URL || "postgres://postgres:abbas@192.168.18.21:5432/medusa-starter-default";
+const DATABASE_URL = process.env.DATABASE_URL || "postgres://postgres:abbas@localhost:5432/medusa-starter-default";
 
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
