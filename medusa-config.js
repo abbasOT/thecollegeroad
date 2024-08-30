@@ -23,14 +23,14 @@ try {
 
 // CORS when consuming Medusa from admin
 const ADMIN_CORS =
-  process.env.ADMIN_CORS || "https://thecollegeroad.com";
+  process.env.ADMIN_CORS || "https://circuithub.pk";
 
 // CORS to avoid issues when consuming Medusa from a client
-const STORE_CORS = process.env.STORE_CORS || "https://thecollegeroad.com";
+const STORE_CORS = process.env.STORE_CORS || "https://circuithub.pk";
 
 // const DATABASE_URL = process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
 
-const DATABASE_URL = process.env.DATABASE_URL || "postgres://postgres:abbas@localhost:5432/medusa-starter-default";
+const DATABASE_URL = process.env.DATABASE_URL || "postgresql://postgres.qbatxyuuboxorqcludga:ecom@octa123@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres";
 
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
@@ -42,7 +42,7 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
-      base_url: "https://thecollegeroad.com/uploads",
+      base_url: "https://circuithub.pk/uploads",
     },
   },
   {
@@ -50,12 +50,12 @@ const plugins = [
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
       // autoRebuild: true,
-      backend_url: "https://thecollegeroad.com",
+      backend_url: "https://circuithub.pk",
       develop: {
         // open: process.env.OPEN_BROWSER !== "false",
         admin_path: "/app",
         open: false,
-        host: "https://thecollegeroad.com", // Set this to your desired IP address
+        host: "circuithub.pk", // Set this to your desired IP address
         port: 7001,  // Set the desired port (if you want to change it from 7001)
       },
     },

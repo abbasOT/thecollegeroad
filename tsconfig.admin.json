@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
@@ -6,3 +7,13 @@
   "include": ["src/admin"],
   "exclude": ["**/*.spec.js"]
 }
+=======
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext"
+  },
+  "include": ["src/admin"],
+  "exclude": ["**/*.spec.js"]
+}
+>>>>>>> 76dfd45 (latest changes)
