@@ -77,10 +77,15 @@ const hostname = 'localhost';
 const port = process.env.PORT || 9000;
 
 // Path to the Next.js application directory
-const nextAppDir = path.join(__dirname, '../ecommerce-octa'); // Adjusted path to Next.js project
+const nextAppDir = path.join(__dirname, '../ecommerce-octa');
+
+// const nextAppDir = path.join(__dirname, '../ecommerce-octa/.next');
+
 
 // Initialize Next.js app
 const app = next({ dev, hostname, port, dir: nextAppDir });
+// const app = next({ dev: false, hostname, port, dir: nextAppDir });
+
 const handle = app.getRequestHandler();
 
 (async () => {

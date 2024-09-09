@@ -42,7 +42,8 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
-      base_url: "https://circuithub.pk/uploads",
+      // base_url: "https://circuithub.pk/uploads",
+      backend_url: "https://circuithub.pk"
     },
   },
   {
